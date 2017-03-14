@@ -21,7 +21,7 @@
 
 {%- for name, addrlist in hosts.items() %}
 {{ name }}-host-entry:
-  host.present:
+  host.only:
 {% if addrlist is string %}
     - ip: {{ addrlist }}
 {% else %}
