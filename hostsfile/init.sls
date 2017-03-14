@@ -23,9 +23,9 @@
 {{ name }}-host-entry:
   host.only:
 {% if addrlist is string %}
-    - ip: {{ addrlist }}
+    - name: {{ addrlist }}
 {% else %}
-    - ip: {{ addrlist|first }}
+    - name: {{ addrlist|first }}
 {% endif %}
     - names:
       - {{ name }}
