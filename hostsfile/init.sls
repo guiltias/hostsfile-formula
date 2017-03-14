@@ -27,6 +27,6 @@
 {% else %}
     - name: {{ addrlist|first }}
 {% endif %}
-    - names:
+    - hostnames:
       - {{ name }}
 {% endfor %}
